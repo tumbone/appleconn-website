@@ -29,6 +29,18 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+// Floating label headings for the contact form
+$(function() {
+    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
+        $(this).toggleClass("floating-label-form-group-with-value", !! $(e.target).val());
+    }).on("focus", ".floating-label-form-group", function() {
+        $(this).addClass("floating-label-form-group-with-focus");
+    }).on("blur", ".floating-label-form-group", function() {
+        $(this).removeClass("floating-label-form-group-with-focus");
+    });
+});
+
+
 // Google Maps Scripts
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
