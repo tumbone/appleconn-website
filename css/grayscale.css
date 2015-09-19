@@ -54,7 +54,8 @@ p {
 }
 
 a {
-    color: #42dca3;
+    /*color: #42dca3;*/
+    color: #dc143c;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -63,7 +64,10 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1d9b6c;
+    /*color: #1d9b6c;*/
+    color: #dc143c;
+    outline: none;
+    outline-offset: 0;
 }
 
 
@@ -97,9 +101,11 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle:active {
     outline: 0;
 }
-
+.navbar-custom .navbar-brand .navbar-toggle a:hover{
+    color:#dc143c;
+}
 .navbar-custom a {
-    color: #fff;
+    color: rgba(255,255,255,.50);
 }
 
 .navbar-custom .nav li a {
@@ -110,20 +116,23 @@ a:focus {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    /*color: rgba(255,255,255,.8);*/
-    color: #1d9b6c;
+    color: #fff;
+    border-bottom: 2px solid #dc143c;
+    /*color: #dc143c;*/
     background-color: transparent;
+    background: none;
 }
 
 .top-nav-collapse .nav li a:hover{
-    outline:0;background:none;
-    color:#41dd85!important;
+    outline:0;
+    background:none;
+    color:#dc143c!important;
     border-bottom:none!important
 }
 
 .navbar-custom .nav li.active a{
     outline:0;background:none;
-    color:#41dd85!important;
+    color:#dc143c!important;
     border-bottom:none!important
 }
 
@@ -157,7 +166,8 @@ a:focus {
         border-bottom:none!important
     }
     .navbar-custom .nav li a:hover{
-        color:#41dd85!important
+        /*color:#41dd85!important*/
+        color:#dc143c!important
     }
     .brand-heading{
         font-size:36px!important;
@@ -167,6 +177,9 @@ a:focus {
     }
 }
 @media(min-width:768px) {
+    .navbar-brand{
+        color:#fff!important;
+    }
     .navbar-custom {
         padding: 20px 0;
         border-bottom: 0;
@@ -175,6 +188,14 @@ a:focus {
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-custom .nav li a{
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-bottom: 4px;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -201,7 +222,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/wallhaven-98439.jpg) no-repeat bottom center scroll;
+    background: url(../img/wallhaven-260858.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -326,17 +347,29 @@ a:focus {
 .content-section {
     padding-top: 100px;
 }
+
+
 #services{
-     background-color: #ebecfc;
+    background-color: #f3f3f3;
+    width: 100%;
  }
+#services .thumbnail{
+    background-color: #fff;
+}
 #services .fa{
-    color: #42dca3;
+    /*color: #a9a9a9;*/
+    color: #3f7bb7;
     font-size: 600%;
     padding: 15px;
 }
-#gallery{
-    background-color: #ebecfc;
+.projects-section img{
+    height: 220px;
+    max-width: 250px;
 }
+#gallery{
+    background-color: #f3f3f3;
+}
+
 .download-section {
     width: 100%;
     padding: 50px 0;
@@ -357,11 +390,11 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 150px;
     }
 
-    .download-section {
-        padding: 100px 0;
+    .gallery-section {
+        padding: 150px 0;
     }
 
     #map {
@@ -379,14 +412,14 @@ a:focus {
     text-transform: uppercase;
     font-size: small;
     color: #dc143c;
-    border: 2px solid #dc143c;
-    border-radius: 4px;
-    padding: 2.5%;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    padding: 4%;
 }
 .button:hover{
-    background-color: #dc143c;
+    background-color: #bb123c;
     color: #fff!important;
-    border:2px solid #dc143c;
+    border:2px solid #bb123c;
 }
 
 .btn-default {
@@ -483,7 +516,7 @@ ul.banner-social-buttons {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #dc143c;
 }
 
 form .row:first-child .floating-label-form-group {
