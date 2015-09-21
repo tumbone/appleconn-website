@@ -152,7 +152,11 @@ a:focus {
 .navbar-custom .nav li.active a:hover {
     color: #fff;
 }
-
+@media (max-width: 1190px){
+    .navbar-brand .brand-title{
+        display: none;
+    }
+}
 @media (max-width:767px){
     p{
         font-size:16px
@@ -347,9 +351,8 @@ a:focus {
     padding-top: 100px;
 }
 
-
 #services{
-    background-color: #f3f3f3;
+    background-color: #fafafa;
     width: 100%;
  }
 #services .thumbnail{
@@ -365,6 +368,7 @@ a:focus {
     color: #3f7bb7;
     text-align: center;
 }
+
 
 
 .modal .modal-body li {
@@ -383,7 +387,7 @@ a:focus {
     max-width: 250px;
 }
 #gallery{
-    background-color: #f3f3f3;
+    background-color: #fafafa;
 }
 #contact .fa{
     margin: 0 0;
